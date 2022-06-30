@@ -1,80 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Responsive Web Design</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Resets</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <!-- Header -->
     <header>
-      <h1>Welcome to the store!</h1>
-      <p>
-        When you change the screen size, the layout will change so you can view
-        the page comfortably no matter how small the screen gets!
-      </p>
+      <h1>The CSS Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Navbar -->
-    <nav>
-      <a href="#cam">Camera</a>
-      <a href="#tab">Tablet</a>
-      <a href="#paper">Toilet Paper</a>
-      <a href="#wood">Wooden Spoons</a>
-    </nav>
-
-    <!-- Body -->
     <main>
-      <!-- Sidebar -->
-      <aside>
-        <h2>When you change the screen size...</h2>
-        <p class="p1">The navbar and this sidebar will be stacked on top of each other!</p>
-        <p class="p1"> 
-          And the product cards will wrap around as the screen gets smaller.
-        </p>
-        <p class="p1">
-          Nav bar selection will direction to location on page. Happy Shopping! 
-        </p>
-      </aside>
-      <!-- Product Cards -->
-      <div class="products">
-        <section class="card">
-          <header>Latest Camera</header>
-          <img src="./assets/images/camera.jpg" alt="black camera" id="cam"/>
-          <p>Price: $300</p>
-        </section>
+      <section>
+        <article id="layout">
+          <h2>Building Responsive Layouts</h2>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              natus recusandae amet nostrum odit, ut unde non sint, quia sed
+              inventore odio, delectus iure! Eligendi vitae fuga blanditiis
+              accusamus tempore!
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+              <li>Nihil natus recusandae amet nostrum odit</li>
+              <li>Eligendi vitae fuga blanditiis accusamus tempore</li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              natus recusandae amet nostrum odit, ut unde non sint, quia sed
+              inventore odio, delectus iure! Eligendi vitae fuga blanditiis
+              accusamus tempore! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Consectetur, nisi, saepe quas sint consequuntur
+              esse voluptatum, dolores dolor aspernatur neque laborum dolorum
+              dolorem repudiandae. Dignissimos eveniet sequi corporis tempore
+              ullam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              natus recusandae amet nostrum odit, ut unde non sint, quia sed
+              inventore odio, delectus iure! Eligendi vitae fuga blanditiis
+              accusamus tempore!
+            </p>
+          </div>
+          <div class="resources">
+            <h3>
+              Show Resources
+            </h3>
+            <ul class="links">
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                  >MDN web docs on responsive design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+                  >MDN web docs on using media queries</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+                  >MDN web docs on flexbox</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <section class="card">
-          <header>Digital Tablet</header>
-          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" id="tab" />
-          <p>Price: $150</p>
-        </section>
-        <section class="card">
-          <header>Bulk Toilet Paper</header>
-          <img
-            src="./assets/images/toilet-paper.jpg"
-            alt="rolls of toilet paper in a basket" id="paper"
-          />
-          <p>Price: $35</p>
-        </section>
-        <section class="card">
-          <header>4 Wooden Spoons</header>
-          <img
-            src="./assets/images/wooden-spoons.jpg"
-            alt="4 wooden spoons with different seasonings" id="wood"
-          />
-          <p>Price: $15</p>
-        </section>
-      </div>
+          <hr>
+
+          <div class="resources2">
+            <h3>
+              Show Resources
+            </h3>
+            <ul class="links">
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                  >MDN web docs on responsive design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+                  >MDN web docs on using media queries</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+                  >MDN web docs on flexbox</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <hr>
+
+        </article>
+      </section>
+      <aside>
+    
+        <form>
+          <div>
+            <div>
+              <h2 id="signup">Sign up to Learn More!</h2>
+            </div>
+            <hr>
+            <br>
+            <div>
+              <input type="text" placeholder="Enter in your Name" />
+              <input type="text" placeholder="E-mail address" />
+              <button>Submit</button>
+            </div>
+          </div>
+        </form>
+      </aside>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <h4>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h4>
+      <span>Thanks for visiting!</span>
     </footer>
   </body>
 </html>
